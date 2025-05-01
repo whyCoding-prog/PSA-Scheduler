@@ -9,7 +9,7 @@ PCB(t_pid, t_runTime, t_priority, t_memorySize),successors(t_successors)
 	}
 }
 
-void SynchronousPCB::showPCB() {
+void SynchronousPCB::showPCB() const {
 	std::cout << "pid: " << getPid() << std::endl;
 	std::cout << "runTime: " << getRunTime() << std::endl;
 	std::cout << "priority: " << getPriority() << std::endl;

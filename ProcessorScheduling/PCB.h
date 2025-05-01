@@ -47,7 +47,7 @@ public:
 	void setMemorySize(int m);
 	void setStartAddress(int s);
 
-	virtual void showPCB() = 0;
+	virtual void showPCB() const = 0;
 	virtual bool canRun() = 0;
 
 	void execATimeCycle();

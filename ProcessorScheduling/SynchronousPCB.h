@@ -12,7 +12,7 @@ private:
 public:
 	SynchronousPCB(int t_pid, int t_runTime, int t_priority, int t_memorySize,const std::vector<int>& t_pioneers,const std::vector<int>& t_p_successors);
 	~SynchronousPCB() override = default;
-	void showPCB() override;
+	void showPCB() const override;
 	bool canRun() override;
 	void updatePioneers(int pid);
 

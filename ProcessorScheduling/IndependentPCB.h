@@ -12,7 +12,7 @@ public:
 	IndependentPCB(int t_pid, int t_runTime, int t_priority, int t_memorySize);
 	~IndependentPCB() override = default;
 
-	void showPCB() override;
+	void showPCB() const override;
 	bool canRun() override;
 };
 

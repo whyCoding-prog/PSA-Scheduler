@@ -6,7 +6,7 @@ PCB(t_pid,t_runTime,t_priority,t_memorySize)
 	attribute = ProcessAttribute::Independent;
 }
 
-void IndependentPCB::showPCB() {
+void IndependentPCB::showPCB()const {
 	std::cout << "pid: " << getPid() << std::endl;
 	std::cout << "runTime: " << getRunTime() << std::endl;
 	std::cout << "priority: " << getPriority() << std::endl;
